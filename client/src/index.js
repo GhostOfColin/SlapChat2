@@ -31,8 +31,15 @@ const httpLink = createHttpLink({
   }
 });
 
+let wsUri;
+if (process.env.NODE_ENV === "production") {
+  wsUri = `ws://localhost:${process.env.PORT}`;
+} else {
+  wsUri = "ws://localhost:5000/";
+}
+
 const wsLink = new WebSocketLink({
-  uri: 'wss://webrtc-filetransfer.herokuapp.com/',
+  uri: wsUri,
   options: {
     reconnect: true,
     connectionParams: {
