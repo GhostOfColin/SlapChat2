@@ -44,7 +44,7 @@ class Signup extends Component {
         {signupUser => (
           <div className="signup-login-form-container">
             <div className="login-header">
-              <h1>Welcome to EzeeChat</h1>
+              <h1>Welcome to SlapChat</h1>
               <Link to="/signin"><p>Log In</p></Link>
             </div>
             <form className="signup-login-form"
