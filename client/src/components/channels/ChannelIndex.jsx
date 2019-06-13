@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 const { FETCH_CHANNELS, CURRENT_USER } = Queries;
 
 class ChannelIndex extends React.Component {
+
   render() {
     return (
       <Query query={FETCH_CHANNELS}>
@@ -50,6 +51,7 @@ class ChannelIndex extends React.Component {
                               if (user._id === userId) inChannel = true;
                             })
                             if (!inChannel) return <ChannelDetail key={channel._id} id={channel._id} userId={userId}/>;
+                            return null;
                           })}
                         </div>
                       )}
