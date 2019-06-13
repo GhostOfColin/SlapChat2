@@ -1,5 +1,3 @@
-# SlapChat
-
 # [SlapChat](https://slapchat2.herokuapp.com/)
 
 AetherBnB, is an AiBnB clone that enables users to book vacation rentals and view available spots on a responsive map/list of properties.
