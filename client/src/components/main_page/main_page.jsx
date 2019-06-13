@@ -32,7 +32,7 @@ class MainPage extends React.Component {
                             <AuthRoute exact path="/channels/create" component={CreateChannel} routeType="protected" currentUserId={currentUserId}/>
                             <AuthRoute exact path="/channels/:channelId" component={MainChat} routeType="protected" currentUserId={currentUserId}/>
                             <AuthRoute exact path="/dms/:dmID" component={DMChat} routeType="protected" currentUserId={currentUserId}/>
-                            <Redirect from='/' to='/channels/5ce7290ac8f6f10ed2057a15' />
+                            <Redirect from='/' to='/channels/5d02d03bf2a1bc0017790947' />
                           </Switch>
                         </div>
                       }}
