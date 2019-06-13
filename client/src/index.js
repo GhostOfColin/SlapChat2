@@ -32,8 +32,9 @@ const httpLink = createHttpLink({
 });
 
 let wsUri;
+const PORT = process.env.PORT || 5000;
 if (process.env.NODE_ENV === "production") {
-  wsUri = `ws://localhost:${process.env.PORT}`;
+  wsUri = `ws://localhost:${PORT}`;
 } else {
   wsUri = "ws://localhost:5000/";
 }
