@@ -32,7 +32,7 @@ const httpLink = createHttpLink({
 });
 
 const wsLink = new WebSocketLink({
-  uri: `ws://localhost:5000/`,
+  uri: 'wss://webrtc-filetransfer.herokuapp.com/',
   options: {
     reconnect: true,
     connectionParams: {
